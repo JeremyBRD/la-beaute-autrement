@@ -19,10 +19,12 @@
 <!--     <div id="kalendes-widget-container" ></div> -->
     <!-- END OF KALENDES WIDGET -->
     <%= render 'shared/navbar' %>
+
     <%= yield %>
 
-    <div>
-      <span><i class="far fa-copyright"></i> <%= copiright_year_update %> La_Beauté_autrement</span>
-    </div>
+    <% if action_name == 'home' %>
+      <%= render 'shared/home_footer' %>
+    <% end %>
+    <%= render 'shared/footer' %>
   </body>
 </html>
