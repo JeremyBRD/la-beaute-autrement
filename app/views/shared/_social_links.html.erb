@@ -1,0 +1,25 @@
+<div>
+  <div>
+    <% if action_name == 'home' %>
+        <i class="fas fa-arrow-left" style="color: transparent;"></i>
+      <% else %>
+        <%= link_to :back do %>
+          <i class="fas fa-arrow-left"></i>
+        <% end %>
+    <% end %>
+  </div>
+  <div>
+    <%= link_to '#' do %>
+      <i class="fab fa-instagram"></i>
+    <% end %>
+    <%= link_to '#' do %>
+      <i class="fab fa-twitter"></i>
+    <% end %>
+    <%= link_to '#' do %>
+      <i class="fab fa-facebook"></i>
+    <% end %>
+    <%= link_to '#' do %>
+      <i class="fab fa-pinterest"></i>
+    <% end %>
+  </div>
+</div>
