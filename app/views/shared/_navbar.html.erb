@@ -1,9 +1,11 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
-  <%= link_to "#", class: "navbar-brand" do %>
-    <%= image_tag "https://media-exp1.licdn.com/dms/image/C4D03AQEs-PzxVC1UCw/profile-displayphoto-shrink_400_400/0?e=1600905600&v=beta&t=Ug9VREp2o63rzLd_3FdH9Mzl_5elpMuVfauxUWYhjUk" %>
+  <%= link_to "/", class: "navbar-brand" do %>
+    <%= image_tag "https://media-exp1.licdn.com/dms/image/C4D03AQEs-PzxVC1UCw/profile-displayphoto-shrink_400_400/0?e=1600905600&v=beta&t=Ug9VREp2o63rzLd_3FdH9Mzl_5elpMuVfauxUWYhjUk", alt: "Retour à l'accueil" %>
     <% end %>
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button" data-toggle="collapse"
+  data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+  aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
@@ -12,7 +14,7 @@
     <ul class="navbar-nav mr-auto">
       <li><%= link_to "Contact", "contact" %></li>
       <li><%= link_to "Nos produits", "products_index" %></li>
-      <li><%= link_to "Nos soins", 'cares_index' %></li>
+      <li><%= link_to "Nos soins", "cares_index" %></li>
     </ul>
   </div>
 </div>

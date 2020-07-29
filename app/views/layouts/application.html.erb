@@ -16,13 +16,13 @@
     <!-- KALENDES WIDGET -->
     <script src="https://www.kalendes.com/widget/widget.js?onload=kalendesLoaded" type="text/javascript"></script>
     <script>/*<![CDATA[*/kalendes_host="slowlabeauteautrement";/*]]>*/</script>
-<!--     <div id="kalendes-widget-container" ></div> -->
     <!-- END OF KALENDES WIDGET -->
     <%= render 'shared/navbar' %>
+    <div>
     <%= render 'shared/social_links' %>
 
     <%= yield %>
-
+    </div>
     <% if action_name == 'home' %>
       <%= render 'shared/home_footer' %>
     <% end %>
