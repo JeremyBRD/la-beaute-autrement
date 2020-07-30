@@ -1,0 +1,24 @@
+.footer-rights-container-home{
+  background-color: $ink-blue-lighter;
+  color: $sandy-gold;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 15px;
+  height: 40px;
+
+  a {
+    color: $sandy-gold;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+    opacity: 0.5;
+
+    & :hover {
+      text-decoration: none;
+      color: $sandy-gold-hover;
+      opacity: 1;
+      transform: scale(1.2);
+    }
+  }
+}
