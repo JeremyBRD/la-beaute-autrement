@@ -18,14 +18,17 @@
     <script>/*<![CDATA[*/kalendes_host="slowlabeauteautrement";/*]]>*/</script>
     <!-- END OF KALENDES WIDGET -->
     <%= render 'shared/navbar' %>
-    <div>
     <%= render 'shared/social_links' %>
 
     <%= yield %>
-    </div>
+
     <% if action_name == 'home' %>
       <%= render 'shared/home_footer' %>
     <% end %>
-    <%= render 'shared/footer_right' %>
+    <% if action_name == 'home' %>
+      <%= render 'shared/footer_right' %>
+    <% else %>
+      <%= render 'shared/footer_pages' %>
+    <% end %>
   </body>
 </html>
