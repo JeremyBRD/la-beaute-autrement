@@ -5,11 +5,10 @@
   align-items: center;
   justify-content: center;
   background-color: $ink-blue-lighter;
-  p {
+  p, a, span {
     color: $sandy-gold;
     font-size: 22.5px;
     font-family: $main-font;
-    margin-bottom: 30px;
     letter-spacing: 0.5px;
   }
 }

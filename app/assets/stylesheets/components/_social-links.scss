@@ -1,5 +1,7 @@
 .nav-social {
   display: flex;
+  position: absolute;
+  width: -webkit-fill-available;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
