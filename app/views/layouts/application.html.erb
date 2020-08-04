@@ -19,9 +19,13 @@
     <!-- END OF KALENDES WIDGET -->
     <%= render 'shared/navbar' %>
     <%= render 'shared/social_links' %>
-
-    <%= yield %>
-
+    <% if action_name == 'home' %>
+      <%= yield %>
+    <% else %>
+      <div class="main-container">
+        <%= yield %>
+      </div>
+    <% end %>
     <% if action_name == 'home' %>
       <%= render 'shared/home_footer' %>
     <% end %>

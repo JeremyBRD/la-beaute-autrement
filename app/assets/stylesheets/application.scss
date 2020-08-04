@@ -13,5 +13,30 @@
 @import "pages/index";
 
 .main-container {
+  background: $sandy-grey;
+  margin: 70px 100px 30px 100px;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
 
+.main-style-card {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  width: 300px;
+  height: 370px;
+  text-align: center;
+  padding: 35px;
+  font-weight: bold;
+  font-size: 27px;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    text-decoration: none;
+    transform: scale(1.1);
+  }
 }
