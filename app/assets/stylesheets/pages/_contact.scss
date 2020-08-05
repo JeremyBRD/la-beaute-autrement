@@ -1,0 +1,31 @@
+.contact-left-content {
+  display: flex;
+  flex-direction: column;
+  color: $ink-blue-lighter;
+
+  h3{
+    font-family: $title-font;
+    font-size: 55px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  h2, p, a {
+    font-family: $main-font;
+  }
+
+  a {
+    color: $ink-blue-lighter;
+
+    &:hover {
+      color: $ink-blue-lighter;
+    }
+  }
+}
+
+.contact-title{
+  margin-bottom: 110px;
+  text-align: center;
+}

@@ -1,0 +1,14 @@
+.men-woman-care-card {
+  border: solid white 0.5px;
+  border-radius: 4px;
+  background: $sandy-gold;
+  color: white;
+
+  &:hover {
+    color: $sandy-grey;
+  }
+}
+ .careindex{
+  display: felx;
+  flex-direction: column;
+ }
