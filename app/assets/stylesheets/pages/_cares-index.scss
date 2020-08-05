@@ -12,3 +12,25 @@
   display: felx;
   flex-direction: column;
  }
+
+.title-desc-care-index {
+  text-align: center;
+  margin-bottom: 50px;
+  color: $ink-blue-lighter;
+
+  h3 {
+    font-family: $title-font;
+    font-size: 55px;
+  }
+
+  p {
+    font-family: $main-font;
+  }
+}
+
+.care-cards-group {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
