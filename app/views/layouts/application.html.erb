@@ -2,7 +2,7 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8">
-    <title>La Beaute Autrement</title>
+    <title>La Beauté Autrement</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -11,23 +11,21 @@
 
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171249568-2"></script>
+<!--     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171249568-2"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
 
       gtag('config', 'UA-171249568-2');
-    </script>
+    </script> -->
   </head>
 
   <body class="bg-white">
-    <!-- KALENDES WIDGET -->
-    <script src="https://www.kalendes.com/widget/widget.js?onload=kalendesLoaded" type="text/javascript"></script>
-    <script>/*<![CDATA[*/kalendes_host="slowlabeauteautrement";/*]]>*/</script>
-    <!-- END OF KALENDES WIDGET -->
+
     <%= render 'shared/navbar' %>
     <%= render 'shared/social_links' %>
+
     <% if action_name == 'home' %>
       <%= yield %>
     <% else %>
@@ -35,6 +33,7 @@
         <%= yield %>
       </div>
     <% end %>
+
     <% if action_name == 'home' %>
       <%= render 'shared/home_footer' %>
     <% end %>
