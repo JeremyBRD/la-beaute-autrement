@@ -1,3 +1,92 @@
+// @media(max-width: 770px){
+//   .banner {
+//     height: 707px;
+//     background: no-repeat center url("https://res.cloudinary.com/dhgfifwgd/image/upload/v1596535521/lbav_g2jfo1.png");
+//     background-size: fit-content;
+//     overflow: hidden;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+
+//     h1 {
+//       font-family: $title-font;
+//       color: $sandy-gold;
+//       font-size: 55px;
+//       text-align: center;
+//       position: relative;
+//       top: 100px;
+//     }
+
+//     h5 {
+//       font-size: 22px;
+//       position: relative;
+//       color: $sandy-gold;
+//       top: 150px;
+//       left: 140px;
+//     }
+
+//     a{
+//       color: rgba(70, 79, 83, 0.8);
+//       z-index: 1;
+//     }
+
+//     hr {
+//     margin-top: 1rem;
+//     margin-bottom: 1rem;
+//     border: 0;
+//     border-top: 1px solid $sandy-gold;
+//     width: 80%;
+//     }
+
+//     h5, a {
+//     font-family: $main-font;
+//     }
+
+//     h1, h5 {
+//       margin-bottom: 0px;
+//       z-index: 1;
+//     }
+//   }
+
+//   .elipse {
+//     border: 10px solid $sandy-gold;
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+//     width: 400px;
+//     height: 400px;
+//     border-radius: 50%;
+//   }
+
+//   .square{
+//     background-color: red;
+//     width: 400px;
+//     height: 220px;
+//     position: relative;
+//     top: 20px;
+//     left: 194px;
+//   }
+
+//   .branding-text {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//   }
+
+//   .call-to-action {
+//     background: $sandy-gold;
+//     padding: 20px 65px;
+//     border-radius: 4px;
+//     border: solid 0.5px white;
+//     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+//     margin: 50px;
+//     transition: all .3s ease-in-out;
+//     color: $ink-blue-lighter;
+//     font-weight: bold;
+//     font-size: 20px;
+//   }
+// }
+
 .banner {
   height: 707px;
   background: no-repeat center url("https://res.cloudinary.com/dhgfifwgd/image/upload/v1596535521/lbav_g2jfo1.png");
@@ -27,6 +116,7 @@
 
   a{
     color: rgba(70, 79, 83, 0.8);
+    z-index: 1;
   }
 
   hr {
