@@ -20,3 +20,15 @@
     color: $sandy-gold-hover;
   }
 }
+
+@media (max-width: 768px) {
+  .main-style-home {
+    .home-cards-container {
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+    .home-card {
+      margin: 10px 0px 10px 0px;
+    }
+  }
+}

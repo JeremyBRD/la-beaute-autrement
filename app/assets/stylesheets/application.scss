@@ -39,3 +39,10 @@
     transform: scale(1.1);
   }
 }
+
+@media (max-width: 768px) {
+  .main-style-card{
+    width: 270px;
+    height: 325px;
+  }
+}
