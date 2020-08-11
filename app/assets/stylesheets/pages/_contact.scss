@@ -4,7 +4,7 @@
   color: $ink-blue-lighter;
 
   h3{
-    font-family: $title-font;
+    font-family: $main-font;
     font-size: 55px;
   }
 
@@ -28,4 +28,23 @@
 .contact-title{
   margin-bottom: 110px;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  iframe {
+    display: none;
+  }
+  .contact-left-content{
+    padding: 5px;
+    text-align: center;
+  }
+  .contact-title{
+    margin-bottom: 45px;
+  }
+}
+
+@media (min-width: 768px) {
+  .maplink {
+    display: none;
+  }
 }
