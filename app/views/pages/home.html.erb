@@ -1,16 +1,23 @@
 <%= render 'shared/banner' %>
 <div class="container main-style-home">
   <p>
-    Bioesthéticienne diplômée depuis quelques années, experte en nutrition et en
-    bien être Floriane s’appuie sur son savoir-faire pour vous prodiguer les soins
-    et produits en accord avec vos valeurs.
+    Bienvenue ! Esthéticienne diplômée, experte en soins de la peau,
+     je vous apporte mon savoir-faire sur des soins et produits en accord avec mes valeurs : 
+     J’ai sélectionné pour ma boutique des cosmétiques exempts de pétrochimie,  d’origine naturelle, 
+     Français, et éco-responsable.. Pour prendre soin de vous, et de la nature. Pour une prise en 
+     charge globale de vos besoins, je réalise toujours un diagnostic de peau, mais aussi un diagnostic 
+     nutri-cosmétique afin de mieux comprendre votre peau, et de garantir des résultats durables.
   </p>
   <div class="home-cards-container">
-    <div>
+    <%
+=begin%>
+ <div>
       <%= link_to 'La carte de nos soins', 'https://slowlabeauteautrement.kalendes.com/visit/#/booking', class: "main-style-card home-card care-card-home" %>
-    </div>
+    </div> 
+<%
+=end%>
     <div>
-      <%= link_to 'Notre selection de produits disponible en boutique', 'https://slowlabeauteautrement.kalendes.com/visit/#/booking', class: "main-style-card home-card product-card-home" %>
+      <%= link_to 'Les produits & soins mixtes', 'https://slowlabeauteautrement.kalendes.com/visit/#/booking', class: "main-style-card home-card product-card-home" %>
     </div>
     <div>
       <%= link_to 'Passez nous voir', 'contact', class: "main-style-card home-card contact-card-home" %>

@@ -22,8 +22,9 @@
     font-size: 22px;
     position: relative;
     color: $sandy-gold;
-    top: 150px;
-    left: 140px;
+    top: 125px;
+    left: 70px;
+    text-align: center;
   }
 
   a{
@@ -95,7 +96,7 @@ h1, h5 {
 
 @media (max-width: 768px) {
   .banner {
-    height: 634px;
+    height: 550px;
     background-size: contain;
 
     h1 {
@@ -105,8 +106,8 @@ h1, h5 {
 
     h5 {
       font-size: 17px;
-      top: 85px;
-      left: 68px;
+      top: 78px;
+      left: 19px;
     }
 
     hr {
@@ -117,6 +118,8 @@ h1, h5 {
   .elipse {
     width: 280px;
     height: 280px;
+    position: relative;
+    top: 25px;
   }
 
   .square{
