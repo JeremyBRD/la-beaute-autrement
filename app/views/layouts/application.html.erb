@@ -2,34 +2,14 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8">
+    <title>La Beauté Autrement</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-    <%= favicon_tag "https://res.cloudinary.com/dhgfifwgd/image/upload/v1597226128/lbalogo_zmn3to.png" %>
 
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <%
-=begin%>
- <meta property="og:site_name" content="La Beauté Autrement">
-    <meta property="og:title" content="La Beauté Autrement" />
-    <meta property="og:description" content="Institut de Beauté la Mézière" />
-    <meta property="og:image" itemprop="image" content="https://www.labeauteautrement.fr">
-    <meta property="og:type" content="website" />
-    <meta property="og:updated_time" content="1440432930" /> 
-<%
-=end%>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171249568-3"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-171249568-3');
-    </script>
-    <title>La Beauté Autrement</title>
   </head>
 
   <body class="bg-white">
