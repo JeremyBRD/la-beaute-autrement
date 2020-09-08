@@ -11,11 +11,12 @@
   
   h1 {
     font-family: $title-font;
-    color: $sandy-gold;
+    color: white;
     font-size: 55px;
     text-align: center;
     position: relative;
     top: 100px;
+    z-index: -1;
   }
 
   h5 {
