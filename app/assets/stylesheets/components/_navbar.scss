@@ -25,3 +25,9 @@
     background: $ink-blue-hover;
   }
 }
+
+@media (max-width: 768px) {
+  .navbar-lewagon{
+    min-height: unset;
+  }
+}
