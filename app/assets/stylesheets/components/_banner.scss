@@ -38,16 +38,23 @@
   border: 0;
   border-top: 1px solid $sandy-gold;
   width: 80%;
-}
+  }
 
-h5, a {
-  font-family: $main-font;
-}
+  img {
+    width: 45vw;
+  }
 
-h1, h5 {
-  margin-bottom: 0px;
-  z-index: 1;
-}
+  h5, a {
+    font-family: $main-font;
+  }
+
+  h1, h5 {
+    margin-bottom: 0px;
+    z-index: 1;
+    position: relative;
+    top: -27px;
+    left: 133px;
+  }
 }
 
 .elipse {
@@ -106,12 +113,16 @@ h1, h5 {
 
     h5 {
       font-size: 17px;
-      top: 78px;
-      left: 19px;
+      top: 10px;
+      left: 15px;
     }
 
     hr {
     margin-bottom: 0.5rem;
+    }
+
+    img {
+      width: 70vw;
     }
   }
 
