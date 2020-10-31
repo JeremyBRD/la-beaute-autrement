@@ -22,7 +22,32 @@
   </head>
 
   <body class="bg-white">
-
+    <%# Disable Overflow: hiden; if you don't need Covidoverlay anymore %>
+    <div class="covid-overlay-container">
+      <div class="covid-overlay">
+        <h3>Chers clients !</h3>
+        <p>En cette période de re-confinementCOVID-19, l'institut ne peut vous ouvrir ses portes.</p>
+        <p>Je reste toutefois à votre disposition pour répondre à vos questions, et nous pouvons effectuer</p>
+        <p>des rendez-vous en visio pour que je réalise votre diagnostic de peau, et vous conseille la routine à adapter à la maison !</p>
+        <p>Vous pouvez réserver vos produits en ligne, et les régler sur le site ou bien lors d'un click & collect par chèque</p>
+        <p>bancaire ou espèces. La livraison est aussi possible, et offerte dans un rayon de 10km autour de l'institut !</p>
+        <p>J'ai hâte de vous retrouver ! Prenez soin de vous,</p>
+        <p>Floriane.</p>
+        <p>#Soutenezvoscommerçants <i class="fas fa-heart" style="color: red;"></i></p>
+        <%= link_to 'Commandez en Ligne', 'https://www.kalendes.com/labeauteautrement/#/booking', class: "call-to-action call-to-action-overlay-margin" %>
+        <p style="margin-top: 16px;">Retrouvez-moi également sur les réseaux sociaux !</p>
+        <div class="social-links-overlay">
+          <%= link_to 'https://instagram.com/la_beaute_autrement?igshid=19qt0pxdtx5xi', target: "_blank" do %>
+            <i class="fab fa-instagram"></i>
+          <% end %>
+          <%= link_to 'https://www.facebook.com/La-beaut%C3%A9-autrement-La-Mezi%C3%A8re-105458861141985', target: "_blank" do %>
+            <i class="fab fa-facebook"></i>
+          <% end %>
+          <a href="mailto:hello@labeauteautrement.fr" class="link" data-ga-action="click"
+            data-ga-category="Contact links" data-ga-label="Footer CTA - Email"><i class="fas fa-envelope"></i></a>     
+        </div>
+      </div>
+    </div>
     <%= render 'shared/navbar' %>
     <%= render 'shared/social_links' %>
 
