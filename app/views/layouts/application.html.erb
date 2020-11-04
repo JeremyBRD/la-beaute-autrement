@@ -23,11 +23,15 @@
 
   <body class="bg-white">
     <%# Disable Overflow: hiden; on body in application.scss if you don't need Covidoverlay anymore %>
-    <div class="covid-overlay-container">
-      <div class="covid-overlay">
-        <h3>Chers clients !</h3>
+    <div class="covid-overlay">
+      <div class="left-content-covid-overlay">
+      <%# <%= image_tag 'la_beaute_autrement_logo_banner-1.png', class: "logo-covid-overlay"%>
+        <div class="title-covid-overlay">
+          <%= image_tag 'logolba.png', class: "logo-covid-overlay"%>
+          <h3>Chers clients !</h3>
+        </div>
         <br>
-        <div>
+        <%# <div> %>
           <p>En cette période de re-confinementCOVID-19, l'institut ne peut vous ouvrir ses portes.</p>
           <p>Je reste toutefois à votre disposition pour répondre à vos questions.</p>
           <p>Nous pouvons effectuer des rendez-vous en visio pour que je réalise votre diagnostic de peau, et vous conseille la routine 
@@ -35,11 +39,13 @@
           <p>Vous pouvez réserver vos produits en ligne, et les régler sur le site ou bien lors d'un click & collect par chèque
           bancaire ou espèces.</p>
           <p>La livraison est aussi possible, et sera offerte dans un rayon de 10km autour de l'institut !</p>
-        </div>
+          <%# <p>Je vous invite également à vous <span class="nl-link">abonner à ma Newsletter</span></p> %>
+        <%# </div> %>
         <p>J'ai hâte de vous retrouver ! Prenez soin de vous,</p>
         <p>Floriane.</p>
         <p>#Soutenezvoscommerçants <i class="fas fa-heart" style="color: red;"></i></p>
-        <%= link_to 'Commandez en Ligne', 'https://www.kalendes.com/labeauteautrement/#/booking', class: "call-to-action call-to-action-overlay-margin" %>
+          <%# <p class="call-to-action-overlay" id="display-clt-account">Créez un compte client <br> (recevez la new-letter)</p> %>
+          <%= link_to 'Commandez en Ligne', 'https://www.kalendes.com/labeauteautrement/#/booking', class: "call-to-action-overlay" %>
         <p style="margin-top: 16px;">Retrouvez-moi également sur les réseaux sociaux !</p>
         <div class="social-links-overlay">
           <%= link_to 'https://instagram.com/la_beaute_autrement?igshid=19qt0pxdtx5xi', target: "_blank" do %>
@@ -52,8 +58,13 @@
             data-ga-category="Contact links" data-ga-label="Footer CTA - Email"><i class="fas fa-envelope"></i></a>     
         </div>
       </div>
+      <div class="right-content-covid-overlay">
+        <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+        <div class="elfsight-app-9506911e-e77a-4602-b25e-2857d2ce71c6 ig-overlay"></div>
+      </div>
     </div>
-    <%= render 'shared/navbar' %>
+
+  <!--  <%= render 'shared/navbar' %>
     <%= render 'shared/social_links' %>
 
     <% if action_name == 'home' %>
@@ -71,6 +82,6 @@
       <%= render 'shared/footer_right' %>
     <% else %>
       <%= render 'shared/footer_pages' %>
-    <% end %>
+    <% end %> -->
   </body>
 </html>
