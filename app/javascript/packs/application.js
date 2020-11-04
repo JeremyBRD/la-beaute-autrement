@@ -16,11 +16,16 @@ require("channels")
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 
+const nlBtn = document.querySelector('.nl-link');
+// const kalendesIsOn = false
 
-// ----------------------------------------------------
-// Note(lewagon): ABOVE IS RAILS DEFAULT CONFIGURATION
-// WRITE YOUR OWN JS STARTING FROM HERE 👇
-// ----------------------------------------------------
+const kalendesAppend = () => {
+  nlBtn.addEventListener('click', () => {
+    // kalendesIsOn = true
+    kalendes.goAccount();
+    kalendes.show();
+  })
+}
 
 // External imports
 import "bootstrap";
@@ -32,6 +37,8 @@ import "bootstrap";
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
+  setTimeout(() => {kalendes.hideButton();}, 2000);
+  kalendesAppend();
 });
 
 import "controllers"
