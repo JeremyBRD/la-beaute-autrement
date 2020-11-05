@@ -17,15 +17,15 @@ require("channels")
 // const imagePath = (name) => images(name, true)
 
 const nlBtn = document.querySelector('.nl-link');
-// const kalendesIsOn = false
+
 
 const kalendesAppend = () => {
   nlBtn.addEventListener('click', () => {
-    // kalendesIsOn = true
     kalendes.goAccount();
     kalendes.show();
   })
 }
+
 
 // External imports
 import "bootstrap";
@@ -37,8 +37,10 @@ import "bootstrap";
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
-  setTimeout(() => {kalendes.hideButton();}, 2000);
   kalendesAppend();
+  setTimeout(() => {
+    kalendes.hideButton();
+  }, 1700);
 });
 
 import "controllers"
