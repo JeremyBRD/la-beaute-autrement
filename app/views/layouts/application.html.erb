@@ -22,43 +22,6 @@
   </head>
 
   <body class="bg-white">
-    <%# Disable Overflow: hiden; on body in application.scss if you don't need Covidoverlay anymore %>
-    <!-- <div class="covid-overlay">
-      <div class="left-content-covid-overlay">
-      <%# <%= image_tag 'la_beaute_autrement_logo_banner-1.png', class: "logo-covid-overlay"%>
-        <div class="title-covid-overlay">
-          <%= image_tag 'logolba.png', class: "logo-covid-overlay"%>
-          <h3>Chers clients !</h3>
-        </div>
-        <br>
-        <p>«  Enfin ! Enfin je vous retrouves, et enfin je peux vous laisser entrer dans mon univers,</p>
-        <p>où nature, expertise, bienveillance et sécurité sont les maîtres mots.</p>
-        <p>Je vous invite à prendre votre rendez-vous en ligne, et  pré-réserver vos articles 
-        pour que je les mettes de côté et réalise si vous le souhaitez un emballage cadeau avant votre venue.</p>
-        <p>Je vous demanderai de vous désinfecter les mains dès l’entrée, de garder votre masque, et sachez que je met tout en œuvre pour garantir une hygiène irréprochable :</p>
-        <p>désinfection du mobilier, des outils, des cabines, du linge, aération régulière .... » </p>
-        <p>Merci pour votre confiance. Et encore une fois, j’ai hâte de vous retrouver !</p>
-        <p>Bonne navigation !</span></p>
-        <p>Floriane.</p>
-        <p>#Soutenezvoscommerçants <i class="fas fa-heart" style="color: red;"></i></p>
-          <%= link_to 'Réserver un soin ou commander en ligne', 'https://www.kalendes.com/labeauteautrement/#/booking', class: "call-to-action-overlay" %>
-        <p style="margin-top: 16px;">Retrouvez-moi également sur les réseaux sociaux !</p>
-        <div class="social-links-overlay">
-          <%= link_to 'https://instagram.com/la_beaute_autrement?igshid=19qt0pxdtx5xi', target: "_blank" do %>
-            <i class="fab fa-instagram"></i>
-          <% end %>
-          <%= link_to 'https://www.facebook.com/La-beaut%C3%A9-autrement-La-Mezi%C3%A8re-105458861141985', target: "_blank" do %>
-            <i class="fab fa-facebook"></i>
-          <% end %>
-          <a href="mailto:hello@labeauteautrement.fr" class="link" data-ga-action="click"
-            data-ga-category="Contact links" data-ga-label="Footer CTA - Email"><i class="fas fa-envelope"></i></a>     
-        </div>
-      </div>
-      <div class="right-content-covid-overlay">
-        <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-        <div class="elfsight-app-9506911e-e77a-4602-b25e-2857d2ce71c6 ig-overlay"></div>
-      </div>
-    </div> -->
 
    <%= render 'shared/navbar' %>
     <%= render 'shared/social_links' %>
@@ -79,6 +42,7 @@
     <% else %>
       <%= render 'shared/footer_pages' %>
     <% end %>
+    
   </body>
   <!-- KALENDES WIDGET -->
   <!-- <script src="https://www.kalendes.com/widget/widget.js" type="text/javascript"></script> 
