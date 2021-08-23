@@ -1,0 +1,52 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap/scss/bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+
+.main-container {
+  background: $sandy-grey;
+  margin: 70px 100px 30px 100px;
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.main-style-card {
+  overflow: hidden;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  width: 300px;
+  height: 370px;
+  text-align: center;
+  padding: 35px;
+  font-weight: bold;
+  font-size: 27px;
+  transition: all .3s ease-in-out;
+
+  &:hover {
+    text-decoration: none;
+    transform: scale(1.1);
+  }
+}
+
+@media (max-width: 768px) {
+  .main-style-card{
+    width: 270px;
+    height: 325px;
+  }
+  .main-container{
+    margin: 62px 10px 10px 10px;
+    min-height: 73vh;
+  }
+}

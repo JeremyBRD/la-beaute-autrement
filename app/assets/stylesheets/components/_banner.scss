@@ -1,0 +1,164 @@
+
+.banner {
+  height: 707px;
+  background: no-repeat center url("https://res.cloudinary.com/dhgfifwgd/image/upload/v1596535521/lbav_g2jfo1.png");
+  background-size: cover;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  h1 {
+    font-family: $title-font;
+    color: white;
+    font-size: 55px;
+    text-align: center;
+    position: relative;
+    top: 100px;
+    z-index: -1;
+  }
+
+  h5 {
+    font-size: 22px;
+    position: relative;
+    color: $sandy-gold;
+    top: 125px;
+    left: 70px;
+    text-align: center;
+  }
+
+  a{
+    color: rgba(70, 79, 83, 0.8);
+    z-index: 1;
+  }
+  
+  hr {
+    margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 0;
+  border-top: 1px solid $sandy-gold;
+  width: 80%;
+  }
+
+  img {
+    width: 45vw;
+  }
+
+  h5, a {
+    font-family: $main-font;
+  }
+
+  h1, h5 {
+    margin-bottom: 0px;
+    z-index: 1;
+    position: relative;
+    top: -27px;
+    left: 133px;
+  }
+}
+
+.elipse {
+  border: 10px solid $sandy-gold;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+}
+
+.square{
+  background-color: white;
+  width: 400px;
+  height: 220px;
+  position: relative;
+  top: 20px;
+  left: 194px;
+}
+
+.branding-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.call-to-action {
+  background: $sandy-gold;
+  padding: 20px 65px;
+  border-radius: 4px;
+  border: solid 0.5px white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 50px;
+  transition: all .3s ease-in-out;
+  color: $ink-blue-lighter;
+  font-weight: bold;
+  font-size: 20px;
+  
+  &:hover {
+    text-decoration: none;
+    background: $sandy-gold-hover;
+    transform: scale(1.1);
+    color: $ink-blue-lighter;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    height: 550px;
+    background-size: contain;
+
+    h1 {
+      font-size: 10px;
+      top: 30px;
+    }
+
+    h5 {
+      font-size: 17px;
+      top: 10px;
+      left: 15px;
+    }
+
+    hr {
+    margin-bottom: 0.5rem;
+    }
+
+    img {
+      width: 70vw;
+    }
+  }
+
+  .elipse {
+    width: 280px;
+    height: 280px;
+    position: relative;
+    top: 25px;
+  }
+
+  .square{
+    width: 175px;
+    haight: 175px;
+    top: 0px;
+    left: 81px;
+    clip-path: polygon(33% 0%, 90% 0%, 80% 31%, 71% 61%, 37% 80%, 0 100%, 0 0);
+  }
+
+  .branding-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .call-to-action {
+    background: $sandy-gold;
+    padding: 20px 55px;
+    border-radius: 4px;
+    border: solid 0.5px white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 50px;
+    transition: all .3s ease-in-out;
+    color: $ink-blue-lighter;
+    font-weight: bold;
+    font-size: 20px;
+  }
+}

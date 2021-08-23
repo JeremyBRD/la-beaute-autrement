@@ -1,0 +1,33 @@
+.navbar-lewagon {
+  justify-content: space-between;
+  background: $ink-blue-lighter;
+  min-height: 65px;
+}
+
+.navbar-lewagon .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar-lewagon .navbar-brand img {
+  width: 40px;
+}
+
+.nav-links-lba li {
+  & a {
+    color: $sandy-gold;
+    padding: 12px 10px;
+    font-family: $main-font;
+    font-size: 20px;
+  }
+  & :hover {
+    text-decoration: none;
+    color: $sandy-gold-hover;
+    background: $ink-blue-hover;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-lewagon{
+    min-height: unset;
+  }
+}

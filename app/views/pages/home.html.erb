@@ -1,0 +1,33 @@
+<head>
+<title>La Beauté Autrement</title>
+</head>
+<%= render 'shared/banner' %>
+<div class="container main-style-home">
+  <p>
+    Bienvenue ! Esthéticienne diplômée, experte en soins de la peau,
+     je vous apporte mon savoir-faire sur des soins et produits en accord avec mes valeurs : 
+     J’ai sélectionné pour ma boutique des cosmétiques exempts de pétrochimie,  d’origine naturelle, 
+     Français, et éco-responsable.. Pour prendre soin de vous, et de la nature. Pour une prise en 
+     charge globale de vos besoins, je réalise toujours un diagnostic de peau, mais aussi un diagnostic 
+     nutri-cosmétique afin de mieux comprendre votre peau, et de garantir des résultats durables.
+  </p>
+  <div class="home-cards-container">
+    <%
+=begin%>
+ <div>
+      <%= link_to 'La carte de nos soins', 'https://slowlabeauteautrement.kalendes.com/visit/#/booking', class: "main-style-card home-card care-card-home" %>
+    </div> 
+<%
+=end%>
+    <div>
+      <%= link_to 'Les produits & soins mixtes', 'https://labeauteautrement.kalendes.com/visit/#/booking', class: "main-style-card home-card product-card-home" %>
+    </div>
+    <div>
+      <%= link_to 'Passez nous voir', 'contact', class: "main-style-card home-card contact-card-home" %>
+    </div>
+  </div>
+  <!--
+  <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+  <div class="elfsight-app-9506911e-e77a-4602-b25e-2857d2ce71c6 ig-overlay"></div>
+  -->
+</div>

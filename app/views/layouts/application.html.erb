@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= favicon_link_tag asset_path('logolba.png') %>
+    <meta name="keywords" content="Institut de beauté la Mézière">
+    <meta name="description" content="La Beauté Autrement - Boutique et Institut de Beauté éco-responsable à la Mézière - Réservez vos soins en ligne">
+    <meta property="og:description" content="La Beauté Autrement - Boutique et Institut de Beauté éco-responsable à la Mézière - Réservez vos soins en ligne">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-171249568-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-171249568-3');
+    </script>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
+  </head>
+
+  <body class="bg-white">
+
+   <%= render 'shared/navbar' %>
+    <%= render 'shared/social_links' %>
+
+    <% if action_name == 'home' %>
+      <%= yield %>
+    <% else %>
+      <div class="main-container">
+        <%= yield %>
+      </div>
+    <% end %>
+
+    <% if action_name == 'home' %>
+      <%= render 'shared/home_footer' %>
+    <% end %>
+    <% if action_name == 'home' %>
+      <%= render 'shared/footer_right' %>
+    <% else %>
+      <%= render 'shared/footer_pages' %>
+    <% end %>
+    
+  </body>
+  <!-- KALENDES WIDGET -->
+  <!-- <script src="https://www.kalendes.com/widget/widget.js" type="text/javascript"></script> 
+  <script>/*<![CDATA[*/kalendes_host="labeauteautrement";/*]]>*/</script> <div id="kalendes-widget-container" ></div>  -->
+  <!-- END OF KALENDES WIDGET -->
+</html>

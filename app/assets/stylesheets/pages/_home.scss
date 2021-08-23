@@ -1,0 +1,53 @@
+.main-style-home {
+  p {
+  color: $sandy-gold;
+  font-size: 25px;
+  text-align: center;
+  }
+
+  margin-bottom: 45px;
+}
+
+.home-cards-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.home-card {
+  margin: 40px 0px 90px 0px;
+  color: $sandy-gold;
+
+  &:hover {
+    color: $sandy-gold-hover;
+  }
+}
+
+.care-card-home {
+  background: no-repeat url('https://res.cloudinary.com/dhgfifwgd/image/upload/v1596652194/green_leaf_1_xdwmk0.png');
+  background-color: #FCFCFC;
+}
+
+.product-card-home {
+  background: no-repeat url('https://res.cloudinary.com/dhgfifwgd/image/upload/v1596652194/green_leaf_2_meb69v.png');
+}
+
+.contact-card-home {
+  background: no-repeat url('https://res.cloudinary.com/dhgfifwgd/image/upload/v1596652194/green_leaf_3_njflah.png');
+}
+
+@media (max-width: 768px) {
+  .main-style-home {
+    p {
+      font-size: 20px;
+      margin-bottom: 25px;
+    }
+    .home-cards-container {
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+    .home-card {
+      margin: 10px 0px 10px 0px;
+    }
+  }
+}

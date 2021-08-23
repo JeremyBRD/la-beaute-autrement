@@ -1,0 +1,22 @@
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+  <% if action_name == 'home' %>
+    <p> </p>
+  <% else %>
+    <%= link_to "/", class: "navbar-brand" do %>
+      <%= image_tag "logolba.png", alt: "Retour à l'accueil" %>
+    <% end %>
+  <% end %>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse"
+  data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+  aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto nav-links-lba">
+      <li class=""><%= link_to "Contact", "contact" %></li>
+      <li><%= link_to "Les produits & soins mixtes", "https://slowlabeauteautrement.kalendes.com/visit/#/booking" %></li>
+    </ul>
+  </div>
+</div>

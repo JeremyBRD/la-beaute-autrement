@@ -1,0 +1,28 @@
+<div class="nav-social">
+  <div>
+    <% if action_name == 'home' %>
+        <i class="fas fa-arrow-left" style="color: transparent;"></i>
+      <% else %>
+        <%= link_to '/' do %>
+          <i class="fas fa-arrow-left"></i>
+        <% end %>
+    <% end %>
+  </div>
+  <div class="social-buttons">
+    <%= link_to 'https://instagram.com/la_beaute_autrement?igshid=19qt0pxdtx5xi', target: "_blank" do %>
+      <i class="fab fa-instagram"></i>
+    <% end %>
+    <%= link_to 'https://www.facebook.com/La-beaut%C3%A9-autrement-La-Mezi%C3%A8re-105458861141985', target: "_blank" do %>
+      <i class="fab fa-facebook"></i>
+    <% end %>
+    <a href="mailto:hello@labeauteautrement.fr" class="link" data-ga-action="click"
+      data-ga-category="Contact links" data-ga-label="Footer CTA - Email"><i class="fas fa-envelope"></i></a>
+    <%
+=begin%>
+ <%= link_to '#' do %>
+      <i class="fab fa-pinterest"></i>
+    <% end %> 
+<%
+=end%>
+  </div>
+</div>
